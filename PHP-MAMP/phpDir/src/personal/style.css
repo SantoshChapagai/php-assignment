@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  height: 100vh;
+  background-color: skyblue;
+}
+
+h1 {
+  background-color: dodgerblue;
+  font-family: 'DM Serif Display', serif;
+  text-align: center;
+  height: 2rem;
+  padding: 2rem;
+  margin: 0 auto;
+}
+
+.information {
+  background: url("https://cdn.pixabay.com/photo/2016/07/31/17/51/chicken-1559548__480.jpg")no-repeat center center/cover;
+  margin: 1rem;
+  color: white;
+  height: 20rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sign {
+  display: flex;
+  justify-content: center;
+}
+
+h3 {
+  margin-top: 2rem;
+}
+
+footer {
+  background-color: cornflowerblue;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  height: 1rem;
+  padding: 1rem;
+}

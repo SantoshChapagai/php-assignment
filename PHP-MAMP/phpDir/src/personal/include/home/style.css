@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: skyblue;
+}
+
+h1 {
+  background-color: dodgerblue;
+  font-family: 'DM Serif Display', serif;
+  text-align: center;
+  height: 2rem;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+input,
+textarea {
+  margin-bottom: 1rem;
+  display: flex;
+}
+
+h2 {
+  margin-bottom: 0.5rem;
+}
+
+.holder {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.create {
+  background: url("https://cdn.pixabay.com/photo/2021/12/19/15/18/christmas-stars-6881348__480.jpg")no-repeat center center/cover;
+  height: 28rem;
+  padding: 1rem;
+  width: 40vw;
+}
+
+.view {
+  background: url("https://cdn.pixabay.com/photo/2017/03/23/19/57/asparagus-2169305__480.jpg")no-repeat center center/cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 28rem;
+  width: 40vw;
+  padding: 1rem;
+  color: white;
+}
+
+a {
+  color: white;
+}
+
+footer {
+  background-color: cornflowerblue;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  height: 1rem;
+  padding: 1rem;
+}

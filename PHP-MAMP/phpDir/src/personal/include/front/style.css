@@ -1,0 +1,28 @@
+body {
+  background: url('https://images.unsplash.com/photo-1623062553275-39028026d7be?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjZ8fGZvb2QlMjBiYWNrZ3JvdW5kfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=1000&q=60')no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+label {
+  display: flex;
+  color: white;
+}
+
+input {
+  margin-bottom: 1rem;
+}
+
+input[type='submit'] {
+  height: 1.5rem;
+  width: 5rem;
+}
+
+#email,
+#password {
+  height: 2rem;
+  width: 15rem;
+}
