@@ -5,11 +5,8 @@ if (isset($_POST['signup'])) {
   $email = $_POST['email'];
   $password = $_POST['password'];
 
-  // password encryption
-  $hashFormat = "2y$10$";
-  $salt = "Theusersignintothereceipeapp!/2023";
-  $hashFormatAndSalt = $hashFormat . $salt;
-  $password = crypt($password, $hashFormatAndSalt);
+  // password hassing
+  $hashedPassword = password_hash($password, PASSWORD_DEFAULT );
 
   if (!empty($email) && !empty($password)) {
     // Check if the email already exists in the database
@@ -19,7 +16,7 @@ if (isset($_POST['signup'])) {
 
     if ($count == 0) {
       // Email does not exist, proceed with inserting the record
-      $query = "INSERT INTO users (email, password) VALUES ('$email', '$password')";
+      $query = "INSERT INTO users (email, password) VALUES ('$email', '$hashedPassword')";
       $result = mysqli_query($conn, $query);
 
       if (!$result) {

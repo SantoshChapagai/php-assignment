@@ -12,7 +12,7 @@ if (isset($_POST['login'])) {
             $storedPassword = $row['password'];
 
             // Verify the password
-            if (crypt($password, $storedPassword)) {
+            if (password_verify($password, $storedPassword)) {
             header("Location: ../home/index.php");
             exit();
             } else {
