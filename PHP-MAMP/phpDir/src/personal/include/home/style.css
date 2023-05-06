@@ -64,3 +64,11 @@ footer {
   height: 1rem;
   padding: 1rem;
 }
+
+button {
+  height: 2rem;
+  width: 5rem;
+  position: absolute;
+  top: 1rem;
+  right: 2rem;
+}

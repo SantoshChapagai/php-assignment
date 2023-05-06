@@ -1,9 +1,20 @@
+<?php 
+    if (isset($_POST['logOut'])){
+      header("Location: ../../index.php");
+    }
+    ?>
 <!DOCTYPE html>
 <html>
   <head>
     <link rel="stylesheet" href="style.css">
+    <title>Receipe</title>
   </head>
   <body>
+    <div>
+      <form method="post">
+      <button type="submit" name="logOut">Log out</button>
+      </form>
+    </div>
   <?php
 include '../header.php';
 ?>
