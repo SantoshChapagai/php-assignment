@@ -4,7 +4,12 @@ include 'database.php';
 if (isset($_POST['signup'])) {
   $email = $_POST['email'];
   $password = $_POST['password'];
-
+   
+  $uppercase = preg_match('@[A-Z]@', $password);
+ $specialChars = preg_match('@[^\w]@', $password);
+ if (strlen($password) < 8 || !$uppercase || !$specialChars) {
+   echo 'Password must contain 8 characters, at least one uppercase and special character';
+ }else{
   // password hassing
   $hashedPassword = password_hash($password, PASSWORD_DEFAULT );
 
@@ -31,6 +36,8 @@ if (isset($_POST['signup'])) {
     echo 'Email and password must be filled';
   }
 }
+}
+
 ?>
 
 <form action="" method="POST">
@@ -38,3 +45,7 @@ if (isset($_POST['signup'])) {
   <input type="password" name="password" placeholder="Password" required><br>
   <input type="submit" name="signup" value="Sign up">
 </form>
+
+<?php 
+ 
+?>
