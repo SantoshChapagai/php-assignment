@@ -2,6 +2,7 @@
 <html>
     <head>
         <link rel="stylesheet" href="style.css">
+        <title>All recipes</title>
     </head>
 <body>
     <h3><a href="../index.php">Back</a></h3>

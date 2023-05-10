@@ -29,6 +29,7 @@ if (isset($_POST['login'])) {
 <html>
     <head>
         <link rel="stylesheet" href="style.css">
+        <title>Sign in</title>
     </head>
     <body>
     <form action="check.php" method="POST">
