@@ -2,17 +2,14 @@
 
 PHP-MAMP is a set of docker images that include a MAMP stack ([macOS](https://www.apple.com/macos/monterey/), [Apache](https://www.apache.org/), [MySQL](https://www.mysql.com/), [PHP8](https://www.php.net/) and [phpMyAdmin](https://www.phpmyadmin.net/) all in one handy package.
 
-## Using the image
+# Recipe app
 
-### On the command line
+# Technologies
+- php, css, and database(mysql)
 
-This is the quickest way
-
-```
-docker-compose up
-```
-
-# Use for reference
-
-Use solely for reference material only
+# Use in your device
+- git clone https://github.com/SantoshChapagai/php-assignment
+- cd to the folder
+- run command: docker-compose up
+- 
 
